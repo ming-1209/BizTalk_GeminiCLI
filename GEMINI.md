@@ -59,9 +59,7 @@ uvicorn main:app --reload --port 8000
 - `my-rules.md`: AI 어시스턴트의 행동 강령 및 작업 제한 사항
 
 ## 🔜 구현 체크리스트 (TODO)
-- [ ] FastAPI 서버 및 Health Check 구현
-- [ ] LangChain을 이용한 Solar-Pro2 연동 (대상별 프롬프트 적용)
-- [ ] 정적 파일 라우팅 설정
+- [x] 백엔드 API 및 AI 연동 구현 완료 (STEP 2)
 - [ ] 프론트엔드 UI 및 API 연동 (Fetch API)
 - [ ] Vercel 통합 배포 설정
 
