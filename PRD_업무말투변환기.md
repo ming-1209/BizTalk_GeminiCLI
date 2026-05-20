@@ -284,7 +284,7 @@ Content-Type: application/json
 
 ## 8. 단계별 구현 순서
 
-### STEP 1. 환경 준비 (30분) [완료]
+### STEP 1. 환경 준비 [완료]
 
 1. [x] GitHub 레포지토리 생성 (`biztone-converter`)
 2. [x] 디렉토리 구조 생성
@@ -295,9 +295,9 @@ Content-Type: application/json
 
 ---
 
-### STEP 2. 백엔드 구현 (90분)
+### STEP 2. 백엔드 구현 
 
-> 원칙 2 적용: 구현 전 Solar-Pro2 연동 방식을 먼저 확인하세요.
+> 원칙 2 적용: 구현 전 Solar-Pro2 연동 방식을 먼저 확인하세요. (use context7)
 
 **구현 순서**
 
