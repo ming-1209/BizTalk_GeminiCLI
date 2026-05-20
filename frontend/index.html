@@ -1,1 +1,53 @@
-<html><body><h1>Biztone Converter Frontend Placeholder</h1></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업무 말투 변환기 (Biztone Converter)</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💼 업무 말투 변환기</h1>
+            <p class="subtitle">AI가 당신의 메시지를 완벽한 업무 언어로 바꿔드립니다.</p>
+        </header>
+
+        <main>
+            <section class="selection-section">
+                <label>수신 대상 선택</label>
+                <div class="button-group" id="targetSelection">
+                    <button class="target-btn active" data-target="boss">👔 상사/임원</button>
+                    <button class="target-btn" data-target="colleague">🤝 타팀 동료</button>
+                    <button class="target-btn" data-target="client">🌐 고객/외부</button>
+                    <button class="target-btn" data-target="team">👥 팀 내 동료</button>
+                </div>
+            </section>
+
+            <section class="input-section">
+                <label for="inputText">하고 싶은 말을 편하게 입력하세요</label>
+                <textarea id="inputText" placeholder="예: 내일까지 보고서 제출 어려울 것 같음"></textarea>
+                <button id="convertBtn" class="primary-btn">변환하기</button>
+            </section>
+
+            <section class="output-section" id="outputSection" style="display: none;">
+                <label for="outputText">변환 결과</label>
+                <div class="result-container">
+                    <textarea id="outputText" readonly></textarea>
+                    <button id="copyBtn" class="secondary-btn">복사하기 📋</button>
+                </div>
+            </section>
+
+            <div id="loading" class="loading-overlay" style="display: none;">
+                <div class="spinner"></div>
+                <p>말투를 정중하게 가다듬는 중...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Biztone Converter. Powered by Solar-Pro.</p>
+        </footer>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
